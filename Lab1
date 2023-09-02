@@ -1,0 +1,46 @@
+package Main;
+
+import java.util.Scanner;
+
+public class Main {
+
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int input1 = sc.nextInt();
+		int input2  = sc.nextInt(); 
+		
+		int add = input1 + input2;
+		
+		int sub = input1 - input2;
+		
+		int div = input1 * input2;
+		
+		int mult = input1 / input2;
+		
+		int modul = input1 % input2;
+		
+		
+
+	}
+package Main;
+
+public class SubMain {
+	
+	public static void main(String args[]) {
+		
+		Main Arri = new Main();
+		
+		System.out.println(Arri.add);
+		System.out.println(Arri.sub);
+		System.out.println(Arri.mult);
+		System.out.println(Arri.div);
+		System.out.println(Arri.modul);
+	
+		
+		
+		
+		
+	}
+
+}
