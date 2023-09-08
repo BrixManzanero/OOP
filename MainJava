@@ -1,0 +1,26 @@
+package Main;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		{
+		
+	
+		// gawa tayo ng Student Structors
+			
+		//Student ObJMessage = new Student();
+		//Student ObJMessage1 = new Student();
+		//Student ObJMessage2 = new Student();
+			
+		// gawa tayo ng object para kay Student Constructor with parameters 
+			
+		Student ObjStudInfo = new Student("Brix", 2022103256, 22);
+		Student ObjStudInfo1 = new Student("Bryan", 2022103256, 20);
+		Student ObjStudInfo2 = new Student("Kobi", 2022103256, 25);
+		
+			
+	}
+
+  }
+
+}
