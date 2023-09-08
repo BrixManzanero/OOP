@@ -1,0 +1,23 @@
+package Main;
+
+public class Student {
+	
+	// Global Variable
+	String StudName;
+	int StudID;
+	int Age;
+	
+	// gawa tayo ng constructor 
+	
+	Student(String LocStudName, int LocStudID, int LocAge) // maga add ng local variable with arguments para sa constructor
+	
+	{
+			//System.out.println("Brix");
+			this.StudName = LocStudName;
+			this.StudID = LocStudID;
+			this.Age = LocAge;
+			
+			System.out.println("Student: Information: " + LocStudName + ", " + LocStudID  + ", " + LocAge);
+			
+	}
+}
