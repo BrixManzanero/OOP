@@ -1,0 +1,34 @@
+package Main;
+
+import java.util.Scanner;;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+
+        while (true) {
+            System.out.print("Enter student ID: ");
+            int studID = sc.nextInt();
+            sc.nextLine(); 
+            System.out.print("Enter student name: ");
+            String studName = sc.nextLine();
+            System.out.print("Enter subject: ");
+            String subject = sc.nextLine();
+
+            Student student = new Student(studID, studName, subject);
+            student.inputGrades();
+            student.computeTermGrade();
+            student.displayTermGrade();
+
+            System.out.print("Do you want to compute the term grade for another student? (yes/no): ");
+            String choice = sc.nextLine().toLowerCase();
+
+            if (!choice.equals("yes")) {
+                break;
+            }
+        }
+    }
+}
+		
