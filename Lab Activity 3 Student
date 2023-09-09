@@ -1,0 +1,61 @@
+package Main;
+
+import java.util.Scanner;
+
+public class Student {
+	
+	// Global variable 
+	
+	int studID;
+	String studName;
+	String subject;
+	double seatwork;
+	double quizzes;
+	double lab;
+	double project;
+	double majorExam;
+	
+     
+	
+     // Create a constructor 
+      
+     Student(int LocstudID, String LocstudName, String Locsubject) { // add a local variable
+     this.studID = studID;
+     this.studName = studName;
+     this.subject = subject;
+     
+     }
+
+     public void inputGrades() {
+    	 Scanner scanner = new Scanner(System.in);
+        
+         System.out.println("Enter grades for " + studName + " in " + subject);
+         System.out.print("Seatwork: ");
+         seatwork = scanner.nextDouble();
+         System.out.print("Quizzes: ");
+         quizzes = scanner.nextDouble();
+         System.out.print("Lab: ");
+         lab = scanner.nextDouble();
+         System.out.print("Project: ");
+         project = scanner.nextDouble();
+         System.out.print("Major Exam: ");
+         majorExam = scanner.nextDouble();
+     }
+
+     public void computeTermGrade() {
+         double classStanding = (seatwork + quizzes + lab + project) / 4.0;
+         double termGrade = (classStanding * 0.6) + (majorExam * 0.4);
+     }
+
+     public void displayTermGrade() {
+        
+		System.out.println("Term Grade for " + studName + " in " + subject + ": " + majorExam);
+     }
+ }
+     
+
+     
+
+
+
+
