@@ -1,0 +1,16 @@
+package Lab;
+
+public class FoodMenu {
+	
+		void displayMenu() {
+			
+			System.out.println("Choose a main menu category: ");
+			System.out.println("1. Soup: ");
+			System.out.println("2. Main Course: ");
+			System.out.println("3. Dessert: ");
+			System.out.println("4. Appetizer: ");
+			System.out.println("5. Exit: ");
+		}
+	
+
+}
