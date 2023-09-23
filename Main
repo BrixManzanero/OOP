@@ -1,0 +1,76 @@
+package Lab;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		FoodMenu Fm;
+		char choice;
+
+		
+		
+		while (true) {
+			
+			Fm = new FoodMenu();
+			Fm.displayMenu();
+			System.out.println("Enter Choice: ");
+			choice = sc.next().charAt(0);
+	
+			
+			switch (choice) {
+			
+			case 'S':
+            case 's':
+			
+			case 1:
+				Fm = new SoupMenu();
+				break; 
+		
+			case 'M':
+             case 'm':
+			
+             case 2:
+				Fm = new MainMenu();
+				break;
+            
+             case 'D':
+             case 'd':
+			
+             case 3: 
+				Fm = new DesertMenu();
+				break;
+            
+             case 'A':
+             case 'a':
+			
+             case 4: 
+				Fm = new AppetizerMenu();
+				break;
+				
+             case 'E':
+             case 'e':
+					
+			case 5: 
+				System.out.println("Exit Menu ");
+				sc.close();
+				System.exit(0);
+				
+				default: 
+					System.out.println("Invalid the choice. Please Enter the valid in the option: ");
+				continue;
+			
+			}
+			
+			Fm.displayMenu();
+			
+			
+		}
+		
+	}
+
+}
