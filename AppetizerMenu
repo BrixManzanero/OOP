@@ -1,0 +1,13 @@
+package Lab;
+
+public class AppetizerMenu extends FoodMenu {
+	
+	
+	void displayMenu() {
+		
+		System.out.println("Appetizer Menu");
+		System.out.println("1. Chicharon: ");
+		System.out.println("2. Baked Peanut: ");
+	}
+
+}
