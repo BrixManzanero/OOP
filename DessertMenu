@@ -1,0 +1,14 @@
+package Lab;
+
+public class DesertMenu extends FoodMenu {
+	
+	void displayMenu() {
+		
+		System.out.println("Dessert Menu");
+		System.out.println("1. Halo-Halo: ");
+		System.out.println("2. Ice Cream: ");
+		System.out.println("3. Cake: ");
+	}
+	
+
+}
