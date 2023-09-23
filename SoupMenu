@@ -1,0 +1,15 @@
+package Lab;
+
+public class SoupMenu extends FoodMenu {
+	
+	
+	void displayMenu() {
+		
+		System.out.println("Soup Menu: ");
+		System.out.println("Pork Sinigang: ");
+		System.out.println("Beef Bulalo: ");
+		System.out.println("Chicken Tinola: ");
+	}
+	
+
+}
